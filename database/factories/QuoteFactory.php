@@ -24,6 +24,7 @@ class QuoteFactory extends Factory
         return [
             'title' => $this->faker->sentence,
             'slug' => $this->faker->slug,
+            'author_id' => rand(1,100),
             'content' => $this->faker->text(1600)
         ];
     }

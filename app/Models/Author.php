@@ -4,7 +4,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Quote extends Model
+class Author extends Model
 {
     use HasFactory;
 
@@ -14,6 +14,6 @@ class Quote extends Model
      * @var array
      */
     protected $fillable = [
-        'title', 'slug', 'author_id', 'content'
+        'photo_url', 'name', 'last_name', 'born', 'biography'
     ];
 }
